@@ -3,13 +3,16 @@ import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import {BottomNavigator} from '../components';
 import {
+  FoodDetail,
   Home,
   Order,
+  OrderSummary,
   Profile,
   SignIn,
   SignUp,
   SignUpAddress,
   SplashScreen,
+  SuccessOrder,
 } from '../pages';
 import SignUpSuccess from '../pages/SignUpSuccess';
 
@@ -35,6 +38,9 @@ const Router = () => {
       <Stack.Screen name="SignUpAddress" component={SignUpAddress} />
       <Stack.Screen name="SignUpSuccess" component={SignUpSuccess} />
       <Stack.Screen name="MainApp" component={MainApp} />
+      <Stack.Screen name="FoodDetail" component={FoodDetail} />
+      <Stack.Screen name="OrderSummary" component={OrderSummary} />
+      <Stack.Screen name="SuccessOrder" component={SuccessOrder} />
     </Stack.Navigator>
   );
 };

@@ -1,6 +1,6 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
-import {IcStarOn, ImageCoffee} from '../../../assets';
+import {Image, StyleSheet, Text, View} from 'react-native';
+import Rating from '../Rating';
 
 const FoodCard = ({image, foodName}) => {
   return (
@@ -8,16 +8,7 @@ const FoodCard = ({image, foodName}) => {
       <Image style={styles.image} source={image} />
       <View style={styles.content}>
         <Text style={styles.foodName}>{foodName}</Text>
-        <View style={styles.ratingWrapper}>
-          <View style={styles.starWrapper}>
-            <IcStarOn />
-            <IcStarOn />
-            <IcStarOn />
-            <IcStarOn />
-            <IcStarOn />
-          </View>
-          <Text style={styles.rating}>5.0</Text>
-        </View>
+        <Rating />
       </View>
     </View>
   );
@@ -40,7 +31,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 200,
-    height: 140,
+    height: 130,
     resizeMode: 'cover',
   },
   content: {
@@ -50,15 +41,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: 'Nunito-Medium',
     color: '#020202',
-  },
-  ratingWrapper: {flexDirection: 'row', marginTop: 6, alignItems: 'center'},
-  starWrapper: {
-    flexDirection: 'row',
-    marginRight: 6,
-  },
-  rating: {
-    color: '#8D92A3',
-    fontFamily: 'Nunito-Regular',
-    fontSize: 14,
   },
 });

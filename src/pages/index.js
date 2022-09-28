@@ -6,6 +6,9 @@ import SignUpSuccess from './SignUpSuccess';
 import Home from './Home';
 import Order from './Order';
 import Profile from './Profile';
+import FoodDetail from './FoodDetail';
+import OrderSummary from './OrderSummary';
+import SuccessOrder from './OrderSuccess';
 
 export {
   SplashScreen,
@@ -16,4 +19,7 @@ export {
   Home,
   Order,
   Profile,
+  FoodDetail,
+  OrderSummary,
+  SuccessOrder,
 };
